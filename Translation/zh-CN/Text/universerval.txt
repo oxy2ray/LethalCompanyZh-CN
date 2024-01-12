@@ -1,7 +1,0 @@
-#universal
-[ Confirm ]=[ 确认 ]
-[ Back ]=[ 返回 ]
-BACK=返回
-> Back=> 返回
-> Confirm=> 确定
-> Cancel=> 取消
