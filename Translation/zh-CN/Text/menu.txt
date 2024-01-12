@@ -1,0 +1,108 @@
+#Start
+LAUNCH MODE=启动模式
+Online=线上
+LAN=本地
+> Online=> 线上
+> LAN=> 本地
+(Recommended)=(推荐)
+
+#Main menu
+> Host=> 建立主机
+> Join a crew=> 加入游戏
+> Settings=> 设置选项
+> Credits=> 制作人员
+> Quit=> 退出游戏
+Loading...=载入中...
+
+#New game
+Server name:=服务器名称:
+Public=公开
+Friends-only=私人
+Save File=存档
+Days: =天数: 
+Name your server...=命名你的服务器...
+Enter a tag...=输入一个标签...
+Enter a lobby name!=你必须输入一个名称!
+PUBLIC means your game will be visible on the server list for all to see.=公开意味着您的服务器将会出现在公共服务器列表上。
+PRIVATE means you must send invites through Steam for players to join.=私人意味着您只能通过 Steam 发送邀请才能让其他玩家加入。
+
+
+#Servers lobby
+Servers=服务器列表
+Enter server tag...=输入服务器标签...
+With challenge moon=挑战模式
+Sort: worldwide=排序: 全球
+Sort: far=排序: 较远
+Sort: near=排序: 较近
+[ Refresh ]=[ 刷新 ]
+> Back to menu=> 返回主菜单
+
+#Settings
+ENABLED=语音已启用
+DISABLED=语音已禁用
+MODE: Push to talk=模式: 按键说话
+MODE: Voice activation=模式: 自动激活
+Master volume:=主音量:
+CONTROLS=选项
+Look sensitivity:=视角灵敏度:
+Invert Y-Axis=反转 Y 轴
+
+DISPLAY=显示
+Frame rate cap:=最大帧率:
+Use monitor (V-Sync)=与显示器相同 (垂直同步)
+Uncapped=无限制
+Display mode:=显示模式:
+Fullscreen=全屏
+Windowed fullscreen=无边框全屏
+Maximized window=最大化窗口
+Window=窗口
+Gamma/Brightness:=伽马/亮度值:
+
+ACCESSIBILITY=无障碍
+Arachnophobia Mode=蜘蛛恐惧症模式
+
+> Reset all to default=> 重置设置
+> Confirm changes=> 确认变更
+Unconfirmed changes!=变更未保存!
+DISCARD=放弃变更
+
+#Keybind Settings
+> Change keybinds=> 更改键位
+> Set to defaults=> 重置键位
+
+REMAP CONTROLS=键位设定
+
+Push to talk=按键说话
+Walk forward=向前行走
+Walk back=向后行走
+Walk left=向左行走
+Walk right=向右行走
+
+Interact=物件互动
+Ping Scan=扫描环境
+Item primary use=物品主要使用
+Item Secondary use=物品次要使用
+Item Tertiary use=物品额外使用
+Item drop=放下物品
+Item switch left=物品栏向左轮选
+Item switch right=物品栏向右轮选
+
+Item inspect=检查物品
+Replace furniture=放置家具
+Turn furniture=旋转家具
+Store furniture=存储家具
+
+Dance=跳舞
+Jump=跳跃
+Point=指向
+Sprint=疾跑
+Crouch=蹲下
+
+Enable chat=打开聊天窗口
+Submit chat=发送聊天信息
+
+REBIND CONTROLLERS=更改手柄键位
+Move forward=向前行走
+Move back=向后行走
+Move left=向左行走
+Move right=向右行走

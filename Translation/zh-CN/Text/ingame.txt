@@ -1,0 +1,19 @@
+#Pause Menu
+> Resume=> 返回游戏
+> Invite friends=> 邀请好友
+CREW:=船员:
+Would you like to leave the game?=您确定要离开游戏吗?
+
+SYSTEMS ONLINE=系统上线
+
+#Chat box
+Press "/" to talk.=按下 "/" 来打开聊天框
+Typing...=正在输入...
+
+joined the ship=加入了游戏
+disconnected=离开了游戏
+
+
+#Ship
+r:"^PROFIT QUOTA:\n(\$[0-9]+) / (\$[0-9]+)$"=目标利润:\n$1  /  $2
+r:"^DEADLINE:\n([0-9]+) Days$"=最后期限:\n$1 天
