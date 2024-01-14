@@ -1,2 +1,2 @@
 Personal use only.
-Untranslated regex text is from [XoF-eLtTiL/LCTC](github.com/XoF-eLtTiL/LCTC)
+Untranslated regex text is from [XoF-eLtTiL/LCTC](https://github.com/XoF-eLtTiL/LCTC)
