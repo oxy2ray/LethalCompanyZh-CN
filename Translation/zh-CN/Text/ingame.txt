@@ -3,17 +3,142 @@
 > Invite friends=> 邀请好友
 CREW:=船员:
 Would you like to leave the game?=您确定要离开游戏吗?
+The file will NOT save! Your ship must be in orbit.=该存档将不会保存!\n您必须将飞船停留在轨道上才能保存。
 
-SYSTEMS ONLINE=系统上线
 
 #Chat box
 Press "/" to talk.=按下 "/" 来打开聊天框
 Typing...=正在输入...
-
-joined the ship=加入了游戏
-disconnected=离开了游戏
+r:"^(.+)started the ship."=$1启动了飞船
+r:"^(.+)joined the ship.$"=$1加入了游戏
+r:"^(.+)disconnected.$"=$1离开了游戏
+r:"^(.+)was left behind.$"=$1被留在外面
 
 
 #Ship
-r:"^PROFIT QUOTA:\n(\$[0-9]+) / (\$[0-9]+)$"=目标利润:\n$1  /  $2
+Disable speaker: [E]=关闭广播: [E]
+Open : [E]=打开: [E]
+[Nothing to store]=[无可存储物品]
+r:"^PROFIT QUOTA:\n(\$[0-9]+) / (\$[0-9]+)$"=目标利润:\n$1 / $2
 r:"^DEADLINE:\n([0-9]+) Days$"=最后期限:\n$1 天
+r:"^Start game : \[(.+?)\]$"=开始游戏: [$1]
+r:"^Start ship : \[(.+?)\]$$"=启动飞船: [$1]
+r:"^Switch lights : \[(.+?)\]$"=开关灯光: [$1]
+r:"^Change: (.+)$"=更换服装: $1
+Change suit=更换服装
+Change: Green suit=更换服装: 绿色套装
+Change: Pajama suit=更换服装: 睡衣套装
+Change: Hazard suit=更换服装: 防辐射套装
+DOOR HYDRAULICS:=舱门液压: 
+r:"^Open door : \[(.+?)\]$"=开启舱门: [$1]
+r:"^Close door : \[(.+?)\]$"=关闭舱门: [$1]
+
+#ShipMonitor
+r:"^MONITORING: (.+?)$"=正在监控: $1
+#ShipTips
+(Cannot hold until ship has landed)=(无法进行，直到飞船着陆)
+(Requires battery-powered item)=(需要使用电池供电的物品)
+Quota= 指标
+Sell scrap for cash.= 卖废品来获取利润
+Brake lever= 刹车杆
+Lands the ship.= 降落飞船
+Terminal= 终端
+Buy flashlights and travel to new planets!= 在此处进行高级飞船操作
+Training manual= 训练手册
+Useful info!= 有用的信息!
+Coil= 充电线圈
+Charges batteries= 给电池充电
+Door controls= 舱门控制
+Can't stay closed forever= 不能一直关闭
+
+
+#ShipTips
+Confirm: [B]   |   Rotate: [R]   |   Store: [X]=确认: [B]   |   旋转: [R]   |   储存: [X]
+[Wait for ship to land]=[等待飞船着陆]
+r:"^Switch camera : \[(.+?)\]$"=切换镜头: [$1]
+r:"^Turn on/off : \[(.+?)\]$"=开关监控: [$1]
+r:"^Access terminal : \[(.+?)\]$"=访问终端: [$1]
+r:"^Grab : \[(.+?)\]$"=拿起: [$1]
+r:"^Climb : \[(.+?)\]$"=攀爬: [$1]
+r:"^Let go : \[(.+?)\]$"=放手: [$1]
+r:"^Enter : \[(.+?)\]$"=进入: [$1]
+r:"^Enter: \[(.+?)\]$"=进入: [$1]
+r:"^Exit : \[(.+?)\]$"=离开: [$1]
+r:"^Exit: \[(.+?)\]$"=离开: [$1]
+r:"^Quit terminal : \[(.+?)\]$"=退出: [$1]
+
+
+
+#HUD
+SYSTEMS ONLINE=系统上线
+r:"^(.+)lb$"=$1磅
+r:"Walk : \[(.+?)\]$"=移动: [$1]
+r:"Sprint: \[(.+?)\]$"=冲刺: [$1]
+r:"Scan : \[(.+?)\]$"=扫描: [$1]
+r:"^Drop (.+?): \[(.+?)\]$"=扔掉 $1: [$2]
+r:"Inspect: \[(.+?)\]$"=检查: [$1]
+r:"Turn page : \[(.+?)\]$"=翻页: [$1]
+r:"Use ladder : \[(.+?)\]$"=使用梯子: [$1]
+r:"Land ship : \[(.+?)\]$"=飞船着陆: [$1]
+r:"^Use door : \[(.+?)\]$"=开门: [$1]
+r:"^Place on door : \[(.+?)\]$"=放置在门上: [$1]
+r:"^Toggle light : \[(.+?)\]$"=开关灯光: [$1]
+r:"^Swing shovel : \[(.+?)\]$"=挥动铲子: [$1]
+r:"^Pull valve : \[(.+?)\]$"=转动阀门: [$1]
+r:"^Picking lock: (.+?)sec."=正在开锁: $1秒 
+[Cannot pull valve]=[无法转动阀门]
+HANDS FULL=双手已被占用
+VISIBILITY LOW!\n\nSteam leak detected in area=能见度低!\n侦测到蒸汽泄漏!
+
+r:"^Value: (.+)"= 价值: $1
+r:"^VALUE: (.+)"= 价值: $1
+r:"^TOTAL:(.+?)$"=总价值: $1
+TOTAL:=总价值: 
+
+r:"^(.*) collected!$"=$1 已收集！
+
+
+#HUDTime
+r:"^(.*)\nAM"=上午 $1
+r:"^(.*) \n AM"=上午 $1
+r:"^(.*) AM"=上午 $1
+r:"^(.*)\nPM"=下午 $1
+r:"^(.*) \n PM"=下午 $1
+r:"^(.*) PM"=下午 $1
+
+
+#Ending
+YOU ARE FIRED.=您被解雇了
+You did not meet the profit quota before the deadline.=您未在截止日期前达到目标利润
+
+#PerformanceReport
+
+PERFORMANCE REPORT=表现报告
+* Most lazy employee=* 最懒惰的员工
+* Most lazy employee.=* 最懒惰的员工.
+* The laziest employee=* 最懒惰的员工
+* The laziest employee.=* 最懒惰的员工.
+
+* Most profitable=* 最会赚钱的员工
+* Most profitable=* 最会赚钱的员工
+* Most profitable.=* 最会赚钱的员工.
+
+* Most paranoid employee=* 最偏执的员工
+* Most paranoid employee.=* 最偏执的员工.
+* The most paranoid employee=* 最偏执的员工
+* The most paranoid employee.=* 最偏执的员工.
+
+* Sustained the most injuries=* 最伤重的员工
+* Sustained the most injuries.=* 最伤重的员工.
+Sustained the most injuries=* 最伤重的员工
+Sustained the most injuries.=* 最伤重的员工.
+
+Notes:=笔记:
+sr:"^笔记:\s?\\n(\*\s*.*?)(?:\\n(\*\s*.*?))?(?:\\n(\*\s*.*?))?\s*[^\\n]$"=笔记: \n$1\n$2\n$3
+sr:"^笔记:\s?\\n(\*\s*.*?)(?:\\n(\*\s*.*?))?(?:\\n(\*\s*.*?))?\s*[\\n]$"=笔记: \n$1\n$2\n$3
+
+EMPLOYEE RANK=员工等级
+Boss=老板
+Leader=领导者
+Intern=实习生
+Employee=正式员工

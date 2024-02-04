@@ -6,6 +6,11 @@ LAN=本地
 > LAN=> 本地
 (Recommended)=(推荐)
 
+#LANMode
+You are in LAN mode. When allowing remote connections through LAN, please ensure you have sufficient network security such as a firewall and/or VPN.=您处于本地局域网模式。\n在允许远程主机链接到您的局域网之前，请确保您的网络足够安全，例如使用防火墙或 VPN。
+(Launched in LAN mode)=(局域网模式)
+> Join LAN session=> 加入本地
+
 #Main menu
 > Host=> 建立主机
 > Join a crew=> 加入游戏
@@ -25,7 +30,7 @@ Enter a tag...=输入一个标签...
 Enter a lobby name!=你必须输入一个名称!
 PUBLIC means your game will be visible on the server list for all to see.=公开意味着您的服务器将会出现在公共服务器列表上。
 PRIVATE means you must send invites through Steam for players to join.=私人意味着您只能通过 Steam 发送邀请才能让其他玩家加入。
-
+Started server, joining...=已启动服务器，正在加入...
 
 #Servers lobby
 Servers=服务器列表
@@ -36,6 +41,7 @@ Sort: far=排序: 较远
 Sort: near=排序: 较近
 [ Refresh ]=[ 刷新 ]
 > Back to menu=> 返回主菜单
+[MODDED]=[模组服]
 
 #Settings
 ENABLED=语音已启用
@@ -43,6 +49,7 @@ DISABLED=语音已禁用
 MODE: Push to talk=模式: 按键说话
 MODE: Voice activation=模式: 自动激活
 Master volume:=主音量:
+r:"^(Current input device: \n)(.*)$"= 当前麦克风设备:\n$2
 CONTROLS=选项
 Look sensitivity:=视角灵敏度:
 Invert Y-Axis=反转 Y 轴
@@ -65,6 +72,7 @@ Arachnophobia Mode=蜘蛛恐惧症模式
 > Confirm changes=> 确认变更
 Unconfirmed changes!=变更未保存!
 DISCARD=放弃变更
+Discard changes=> 放弃变更
 
 #Keybind Settings
 > Change keybinds=> 更改键位
@@ -106,3 +114,10 @@ Move forward=向前行走
 Move back=向后行走
 Move left=向左行走
 Move right=向右行走
+
+
+#InGame
+LOADING WORLD...=载入世界中...
+Waiting for crew...=等待其他成员...
+r:"^Ramdom seed: ([0-9]+)$"=随机种子: $1
+Autosaving...=自动保存中...

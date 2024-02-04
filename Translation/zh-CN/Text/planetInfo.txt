@@ -1,0 +1,60 @@
+#ShipMonitor
+sr:"^Orbiting: (.+?)\nPOPULATION: (.+?)\nCONDITIONS: (.+?)\nFAUNA: (.+?)$"=地点: $1\n人口: $2\n环境: $3\n生态: $4
+sr:"^Orbiting: (.+?)\nPOPULATION: (.+?)\nCONDITIONS: (.+?)\nFAUNA: (.+?)\n$"=地点: $1\n人口: $2\n环境: $3\n生态: $4
+sr:"^Orbiting: (.+?)\nPOPULATION: (.+?)\nCONDITIONS: (.+?)\nFAUNA: (.+?)\nWeather: (.+?)$"=地点: $1\n人口: $2\n环境: $3\n生态: $4\n天气: $5
+sr:"^Orbiting: (.+?)\nPOPULATION: (.+?)\nCONDITIONS: (.+?)\nFAUNA: (.+?)\nWhere the Company resides.$"=地点: $1\n人口: $2\n环境: $3\n生态: $4\n公司所在地。
+
+#HUD
+r:"^CELESTIAL BODY: (.+?)$"=星球: $1
+sr:"^POPULATION: (.+?)\nCONDITIONS: (.+?)\nFAUNA: (.+?)$"=人口: $1\n环境: $2\n生态: $3
+sr:"^POPULATION: (.+?)\nCONDITIONS: (.+?)\nFAUNA: (.+?)\n(.+?)$"=人口: $1\n环境: $2\n生态: $3\n$4
+sr:"^POPULATION: (.+?)\nCONDITIONS: (.+?)\n(.+?)\nFAUNA: (.+?)\n(.+?)$"=人口: $1\n环境: $2\n$3\n生态圈: $4\n$5
+HAZARD LEVEL:=危险等级:
+
+
+#POPULATION
+Unknown=未知
+Abandoned=已被废弃
+None=无
+
+#CONDITIONSnFAUNA
+
+#71 Gordion
+No land masses. Continual storms.=没有陆块。持续的风暴。
+
+#41 Experimentation
+Arid. Thick haze, worsened by industrial artifacts.=干燥。严重雾霾，因工业遗迹而更加恶化。
+Dominated by a few species.=由少数物种主导。
+
+#220 Assurance
+Jagged and weathered terrain. =锯齿型且风化的地形。 
+Ecosystem supports territorial behaviour.=生态系统支持领地行为。
+
+#56 Vow
+Humid. Rough terrain. Teeming with plant-life.=潮湿。地形崎岖。植物繁茂。
+A competitive ecosystem supports aggressive lifeforms.=竞争性生态系统支持侵略性生命形式。
+
+#21 Offense(No unique strings)
+
+#61 March
+Expansive. Constant rain.=广阔。持续降雨。
+Diverse=多样
+
+#85 Rend
+Frozen, rocky. Its planet orbits a white dwarf star.=冰冷，多岩石。它围绕一颗白矮星运行。
+Unlikely for complex life to exist=不太可能存在高级生命形式
+
+#7 Dine(No unique strings)
+
+#8 Titan
+Frozen, rocky. This moon was mined for resources. It's easy to get lost here.=冰冷，多岩石。这颗卫星曾被用来开采资源。很容易在这里迷路。
+Dangerous entities have been rumored to take residence in the vast network of tunnels.=据传危险的实体居住在庞大的隧道网络中。
+
+#Weather
+Rainy=大雨
+Eclipsed=日食
+Flooded=洪水
+Foggy=大雾
+Stormy=风暴
+
+
